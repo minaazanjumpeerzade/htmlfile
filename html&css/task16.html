@@ -5,35 +5,51 @@
         #student{
             font-family:'Times New Roman';
             border-collapse: collapse;
-width: 100;
+            width: 100%;
         }
-        #student td, #student th{
+           #student td, #student th{
             height: 30px;
             vertical-align:bottom ;
-            border: 3px solid #fff;
+            border: 3px solid #1a1515;
             padding: 8px;
 
         } 
-        #student tr:nth-child(even){background-color:#f2f2f2ss ;}
-        #student tr:lower{background-color: #ddd;}
-           #student th{ padding-top: 18px;
+        #student tr:nth-child(even) {background-color:#f2f2f2ss;}
+        #student tr:hover {background-color: #ddd;}
+
+        #student th
+{
+        padding-top: 18px;
         padding-bottom: 15px;
         text-align: left;
         background-color:black;
-        color: white;
+        color: pink;
         }
+        div.popup{
+            position: fixed;
+            top: 40;
+            bottom: 10%;
+            right: 5%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(236, 236, 112);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: none;
 
+        }
     </style>
     
     <title>css</title>
 </head>
 <body>
+    <div class="popup" id="popup">Popup </div>
+    <button onclick="document.getElementById('popup').style.display='block'">open popoup</button>
     <h1> student table</h1>
     <table id="student">
+
         <tr>
         <th>Name</th>
         <th>class</th>
-        <th>pecentage</th>
+        <th>percentage</th>
 </tr>
 <tr>
     <td>ravi</td>
@@ -63,8 +79,6 @@ width: 100;
     </table>
 </body>
 </html>
-<br>
-<br>
 <br>
 <style>
     div.static{
