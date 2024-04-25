@@ -1,0 +1,1 @@
+iqra,minaz,kulsum,khuteja
